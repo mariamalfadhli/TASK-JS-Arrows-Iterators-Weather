@@ -53,7 +53,8 @@ const hottestDays = function (temperatures, threshhold) {
  *******************************************/
 const logHottestDays = function (temperatures, threshhold) {
 const newTemp = hottestDays(temperatures,threshhold)
-return console.log(toCelsius(newTemp));
+newTemp1= toCelsius(newTemp);
+return newTemp1.forEach((temp1)=> console.log(`${temp1}`))
 }
 
 
